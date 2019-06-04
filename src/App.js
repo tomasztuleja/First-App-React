@@ -1,10 +1,13 @@
 import React from 'react';
+import Homepage from './components/homepage/homepage';
+
 
 // Some comment...
 function App() {
   return (
     <div>
-      Zmieniam coś - Sylwia
+      <Homepage />
+
     </div>
   );
 }
