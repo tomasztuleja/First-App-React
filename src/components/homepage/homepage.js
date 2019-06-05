@@ -6,7 +6,7 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                <Navbar />
+                strona główna
             </div>
         );
     }
