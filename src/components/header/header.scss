@@ -1,0 +1,40 @@
+@import "../../style/variables.scss";
+@import "../../style/index.scss";
+
+
+.header {
+    background-color: $color_2;
+
+    .container {
+        color: white;
+        height: 25px;
+        font-size: 16px;
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-items: right;
+
+
+        .log {
+            height: 100%;
+            max-width: 150px;
+            text-align: right;
+            font-size: 16px;
+            padding: 0 15px;
+            transition: 0.3s all;
+            position: relative;
+            cursor: pointer;
+
+            i {
+                padding: 2px;
+            }
+
+            &:hover {
+                background-color: $my_gray;
+                color: $base_color;
+
+            }
+        }
+    }
+
+}
