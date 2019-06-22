@@ -1,0 +1,41 @@
+.statistic-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    margin:last-child {
+        margin: 0;
+
+    }
+
+    .statistic-item {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+
+
+        .icon {
+            margin: 0 auto;
+
+            i {
+                font-size: 45px;
+            }
+        }
+
+        .count {
+            margin: 8px 0 0 0;
+            font-size: 20px;
+        }
+
+        .item {
+            margin: 12px 0 0 0;
+            font-size: 11px;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+
+    }
+}

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import Navbar from '../navbar/navbar';
+import My_Slider from '../slider/slider';
+import Statistics from '../statistics/statistics';
 
 class Homepage extends Component {
     state = {}
     render() {
         return (
             <div>
-                strona główna
+                <Statistics />
+                <My_Slider />
             </div>
         );
     }
