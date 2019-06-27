@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./header.scss";
 import "../../style/index.scss";
+import Login from '../login/login';
 
 class Header extends Component {
     state = {}

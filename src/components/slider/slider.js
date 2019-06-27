@@ -1,41 +1,36 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 import "./slider.scss";
+import photo_1 from "./photos/1.jpg";
+import photo_2 from "./photos/2.jpg";
+import photo_3 from "./photos/3.jpg";
 
-class My_Slider extends Component {
-    state = {}
+export default class SimpleSlider extends Component {
     render() {
-        let slidersettings = {
+        const settings = {
             dots: false,
             infinite: true,
-            speed: 500,
+            speed: 700,
             slidesToShow: 1,
             slidesToScroll: 1,
-            fade: true,
+            autoplay: true,
         };
         return (
-            <div className="homepage">
-                <div className="homepage-slider">
+            <div>
 
-                    <Slider {...slidersettings}>
+                <Slider {...settings}>
+                    <div>
+                        <img src={photo_1} />
+                    </div>
+                    <div>
+                        <img src={photo_2} />
+                    </div>
+                    <div>
+                        <img src={photo_3} />
+                    </div>
 
-                        {/* first photo */}
-                        <div className="item" style={{ backgroundImage: `url(https://www.bslnutrition.com/wp-content/uploads/2017/07/bigstock-Training-Together-And-Staying-133016918.jpg)` }}>
-                        </div>
-
-                        {/* second photo */}
-                        <div className="item" style={{ backgroundImage: `url(https://previews.123rf.com/images/dolgachov/dolgachov1609/dolgachov160906487/62579892-fitness-sport-dance-and-lifestyle-concept-group-of-smiling-people-with-coach-dancing-zumba-in-gym-or.jpg)` }}>
-                        </div>
-
-                        {/* third photo */}
-                        <div className="item" style={{ backgroundImage: `url(https://www.mayfairclubs.com/wp-content/uploads/2015/05/groupfitness-1600x400.jpg)` }}>
-                        </div>
-
-                    </Slider>
-                </div>
-            </div >
+                </Slider>
+            </div>
         );
     }
 }
-
-export default My_Slider;
